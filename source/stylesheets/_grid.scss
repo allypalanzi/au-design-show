@@ -1,0 +1,55 @@
+// CORE
+
+%-grid-base {
+  letter-spacing: -0.31em;
+  text-rendering: optimizespeed;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-flow: row wrap;
+  word-spacing: -0.43em;
+}
+
+%-grid-u {
+  display: inline-block;
+  letter-spacing: normal;
+  word-spacing: normal;
+  vertical-align: top;
+  text-rendering: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// UNITS
+
+@function grid-calc($numerator, $denominator: 1) {
+  @return ($numerator / $denominator) * 100%;
+}
+
+%grid-u-1     { @extend %-grid-u; width: grid-calc(1); }
+%grid-u-1-2   { @extend %-grid-u; width: grid-calc(1,2); }
+%grid-u-1-3   { @extend %-grid-u; width: grid-calc(1,3); }
+%grid-u-2-3   { @extend %-grid-u; width: grid-calc(2,3); }
+%grid-u-1-4   { @extend %-grid-u; width: grid-calc(1,4); }
+%grid-u-3-4   { @extend %-grid-u; width: grid-calc(3,4); }
+%grid-u-1-5   { @extend %-grid-u; width: grid-calc(1,5); }
+%grid-u-2-5   { @extend %-grid-u; width: grid-calc(2,5); }
+%grid-u-3-5   { @extend %-grid-u; width: grid-calc(3,5); }
+%grid-u-4-5   { @extend %-grid-u; width: grid-calc(4,5); }
+
+// SET UP GRID
+// HAS TO BE BELOW UNITS TO BE RESPONSIVE
+
+%grid {
+  @extend %-grid-base;
+  & > * {
+    @media(max-width: $collapse-grid-at) {
+      width: 100% !important;
+    }
+  }
+}
+
+%grid-static {
+  @extend %-grid-base;
+}
