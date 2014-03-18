@@ -13,6 +13,3 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 # Sassy
 gem "toolkit"
 gem "breakpoint"
-
-# Google Drive
-gem 'middle_drive'

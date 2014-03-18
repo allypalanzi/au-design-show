@@ -1,3 +1,5 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+
 // BREAKPOINTS
 $break-small          : 450px;
 $break-medium         : 700px;
@@ -9,10 +11,11 @@ $break-large          : 1100px;
 $collapse-grid-at     : $break-large;
 
 // Colors
-$gray                 : #393938;
-$green                : #677065;
+$dark-blue            : #09031a;
+$dark-green           : #084041;
+$light-green          : #aeccc7;
+$purple               : #4d103b;
 $yellow               : #FFCC33;
 
 // FONTS
-$sans-serif           : 'Gotham SSm A', 'Gotham SSm B', sans-serif;
-$serif                : 'Mercury SSm A', 'Mercury SSm B', Georgia, serif;
+$sans-serif           : 'Open Sans', sans-serif;
