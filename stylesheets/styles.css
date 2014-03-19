@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Cardo);
 /* line 3, /Users/allypalanzi/design/au-design-show/source/stylesheets/_grid.scss */
 .grid { letter-spacing: -0.31em; text-rendering: optimizespeed; display: -webkit-flex; -webkit-flex-flow: row wrap; display: -ms-flexbox; -ms-flex-flow: row wrap; word-spacing: -0.43em; }
 
@@ -42,7 +42,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* line 12, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-body { background: #09031a; color: #fff; font-family: "Open Sans", sans-serif; background: url(../images/bg.jpg) fixed no-repeat; -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover; }
+body { background: #09031a; color: #fff; font-family: "Cardo", sans-serif; background: url(../images/bg.jpg) fixed no-repeat; -moz-background-size: cover; -webkit-background-size: cover; -ms-background-size: cover; background-size: cover; }
 
 /* line 21, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 h1, h2, h3, h4 { text-align: center; }
@@ -51,63 +51,63 @@ h1, h2, h3, h4 { text-align: center; }
 h1 { font-size: 80px; }
 
 /* line 29, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-h2 { font-size: 40px; text-transform: uppercase; font-weight: 300; margin-bottom: 100px; }
+h2 { font-size: 40px; font-weight: 300; margin-bottom: 100px; }
 
-/* line 36, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-h4 { margin-top: 20px; font-size: 20px; }
+/* line 35, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+h4 { margin-top: 25px; font-size: 30px; }
 
-/* line 42, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 41, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .l-wrap { width: 90%; max-width: 1100px; margin: 0 auto; }
 
-/* line 52, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 51, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav { position: fixed; z-index: 1; background: #084041; opacity: .9; width: 100%; top: 0; }
-/* line 59, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-nav li { display: inline-block; float: right; padding: 10px 20px; text-transform: uppercase; font-size: 14px; }
-/* line 67, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 58, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-nav li { display: inline-block; float: right; padding: 10px 20px; font-size: 14px; }
+/* line 66, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav a { text-decoration: none; color: #fff; }
 
-/* line 72, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-hero { color: #fff; width: 100%; position: relative; background-color: rgba(0, 0, 0, 0.8); padding-bottom: 50px; }
-/* line 78, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 71, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-hero { color: #fff; width: 100%; position: relative; padding-bottom: 50px; }
+/* line 76, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero img { max-width: 100%; }
-@media (max-width: 700px) { /* line 72, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+@media (max-width: 700px) { /* line 71, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   .m-hero { max-height: 500px; } }
 
-/* line 87, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 85, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero__header { margin: 0 auto; text-align: center; padding-top: 10%; margin-bottom: 200px; }
 
-/* line 96, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 94, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero__dates p { font-size: 18px; line-height: 22px; }
 
-/* line 102, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 100, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero__location { text-align: right; }
-/* line 105, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 103, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero__location p { font-size: 18px; line-height: 22px; }
 
-/* line 112, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 110, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-about__info { font-size: 22px; line-height: 35px; margin: 50px auto; font-weight: 300; letter-spacing: 1px; max-width: 700px; }
 
-/* line 124, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 122, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-work .m-three { height: 300px; border: 1px solid red; }
 
-/* line 131, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 129, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-judges img { max-width: 200px; }
 
-/* line 136, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 134, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-judges__name { font-size: 24px; margin: 20px 0; font-weight: 300; }
 
-/* line 142, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 140, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 section { padding: 200px 0; text-align: center; }
 
-/* line 147, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.button { padding: 20px; border: 3px solid #fff; color: #fff; display: inline-block; text-transform: uppercase; text-decoration: none; letter-spacing: 2px; font-size: 16px; -moz-transition: 0.7s; -webkit-transition: 0.7s; -ms-transition: 0.7s; transition: 0.7s; }
-/* line 157, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 145, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.button { padding: 20px; border: 3px solid #fff; color: #fff; display: inline-block; text-decoration: none; font-size: 16px; -moz-transition: 0.7s; -webkit-transition: 0.7s; -ms-transition: 0.7s; transition: 0.7s; }
+/* line 153, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .button:hover { border-color: #4d103b; -moz-transition: 0.7s; -webkit-transition: 0.7s; -ms-transition: 0.7s; transition: 0.7s; background-color: #4d103b; }
 
-/* line 164, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 160, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-three { padding: 30px; }
-/* line 167, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-three p { font-size: 16px; line-height: 20px; letter-spacing: 1px; font-weight: 300; }
+/* line 163, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-three p { font-size: 16px; line-height: 20px; font-weight: 300; }
 
-/* line 175, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 170, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 footer { padding: 200px 0px; background-color: rgba(0, 0, 0, 0.8); }
