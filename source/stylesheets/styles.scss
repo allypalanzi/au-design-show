@@ -13,7 +13,7 @@ body {
   background: $dark-blue;
   color: #fff;
   font-family: $sans-serif;
-  background: url(/images/bg.jpg) fixed no-repeat;
+  background: url(../images/bg.jpg) fixed no-repeat;
   @include prefix(background-size, cover);
 
 }
@@ -49,23 +49,30 @@ h4 {
 }
 
 .m-nav {
-  position: fixed;
   z-index: 1;
   background: $dark-green;
-  opacity: .9;
   width: 100%;
-  top: 0;
+  position: relative;
+  opacity: 0;
+  @include prefix(transition, opacity .8s);
+  ul {
+    text-align: right;
+  }
   li {
     display: inline-block;
-    float: right;
     padding: 10px 20px;
-
-    font-size: 14px;
+    font-size: 16px;
   }
 
   a {
     text-decoration: none;
     color: #fff;
+  }
+
+  &.fixed {
+    top: 0;
+    position: fixed;
+    opacity: .9;
   }
 }
 .m-hero {
@@ -138,7 +145,7 @@ h4 {
 }
 
 section {
-  padding: 200px 0;
+  padding: 100px 0;
   text-align: center;
 }
 
