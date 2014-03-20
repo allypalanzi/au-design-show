@@ -12,7 +12,7 @@
 body {
   background: $dark-blue;
   color: #fff;
-  font-family: $sans-serif;
+  font-family: $serif;
   background: url(../images/bg.jpg) fixed no-repeat;
   @include prefix(background-size, cover);
 
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 80px;
   font-weight: 300;
   margin-bottom: 100px;
 }
@@ -36,7 +36,6 @@ h4 {
   margin-top: 25px;
   font-size: 30px;
 }
-
 
 .l-wrap {
   width: 90%;
@@ -50,28 +49,38 @@ h4 {
 
 .m-nav {
   z-index: 1;
-  background: $dark-green;
+  background: rgba(0,0,0,.9);
   width: 100%;
   position: relative;
   opacity: 0;
-  @include prefix(transition, opacity .8s);
+  @include prefix(transition, opacity .4s);
   ul {
     text-align: right;
   }
   li {
     display: inline-block;
-    padding: 10px 20px;
     font-size: 16px;
+    text-transform: lowercase;
   }
 
   a {
     text-decoration: none;
     color: #fff;
+    padding: 20px;
+    display: block;
+    @include prefix(transition, color .5s);
+    
+    &:hover {
+      color: $yellow;
+      @include prefix(transition, color .5s);
+    }
   }
 
   &.fixed {
     top: 0;
     position: fixed;
+  }
+  &.opacity {
     opacity: .9;
   }
 }
@@ -96,33 +105,44 @@ h4 {
   margin-bottom: 200px;
 }
 
-.m-hero__dates {
-  @extend %grid-u-1-2;
-  p {
-    font-size: 18px;
-    line-height: 22px;
-  }
+.m-about {
+  background: rgba(77,16,59,.6);
 }
 
-.m-hero__location {
-  @extend %grid-u-1-2;
-  text-align: right;
-  p {
-    font-size: 18px;
-    line-height: 22px;
-  } 
+.m-judges {
+  background: rgba(8,64,55,.6);
+}
+
+.m-work {
+}
+.m-about__name {
+  font-size: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+  text-transform: uppercase;
+  display: inline-block;
 }
 
 
 .m-about__info {
-  font-size: 22px;
-  line-height: 35px;
-  margin: 50px auto;
-  font-weight: 300;
-  letter-spacing: 1px;
-  max-width: 700px;
+  font-size: 18px;
+  margin-top: 40px;
+  line-height: 28px;
+  &.location {
+    font-size: 22px;
+    line-height: 40px;
+  }
 }
 
+.exhibit {
+  margin-top: 40px;
+}
+
+.m-about__date {
+  font-size: 30px;
+  line-height: 35px;
+  margin: 15px 0;
+}
 
 
 .m-work {
@@ -136,12 +156,26 @@ h4 {
   img {
     max-width: 200px;
   }
+
+  p {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 300;
+  }
+  .circle {
+    border-radius: 200px;
+    overflow: hidden;
+    @include prefix(transition, opacity .5s);
+    &:hover {
+      opacity: .5;
+      
+    }
+  }
 }
 
 .m-judges__name {
-  font-size: 24px;
-  margin: 20px 0;
-  font-weight: 300;
+  font-size: 30px;
+  margin: 15px 0;
 }
 
 section {
@@ -151,30 +185,30 @@ section {
 
 .button {
   padding: 20px;
-  border: 3px solid #fff;
+  border: 1px solid #fff;
   color: #fff;
   display: inline-block;
   text-decoration: none;
   font-size: 16px;
   @include prefix (transition, .7s);
   &:hover {
-    border-color: $purple;
+    border-color: $dark-green;
     @include prefix (transition, .7s);
-    background-color: $purple;
+    background-color: $dark-green;
   }
+}
+
+.m-two {
+  @extend %grid-u-1-2;
 }
 
 .m-three {
   @extend %grid-u-1-3;
   padding: 30px;
-  p {
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: 300;
-  }
 }
+
 
 footer {
   padding: 200px 0px;
-  background-color: rgba(0,0,0,.8);
+  background: rgba(0,0,0,.6);
 }

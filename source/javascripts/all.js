@@ -1,36 +1,12 @@
-function isElementInView(elem) {
-      var $elem = $(elem);
- 
-      // Get the scroll position of the page.
-      var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
-      var viewportTop = $(scrollElem).scrollTop();
-      var viewportBottom = viewportTop + $(window).height();
- 
-      // Get the position of the element on the page.
-      var elemTop = Math.round( $elem.offset().top );
-      var elemBottom = elemTop + $elem.height();
- 
-      return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
-  }
- 
-  // Check if it's time to start the fixed.
-  function checkfixed(item, fixed) {
-      var $elem = $(item);
- 
-      // If the fixed has already been started
-      if ($elem.hasClass(fixed)) return;
- 
-      if (isElementInView($elem)) {
-          // Start the fixed
-          $elem.addClass(fixed);
-      }
-  }
- 
-  // Capture scroll events
-  $(window).scroll(function(){
-      checkfixed(".m-nav","fixed");
- 
-  });
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 400) {
+        $(".m-nav").addClass("fixed opacity");
+    } else {
+        $(".m-nav").removeClass("opacity");
+    }
+});
 
   $(function() {
   $('a[href*=#]:not([href=#])').click(function() {

@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Cardo);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Abril+Fatface);
 
 // BREAKPOINTS
 $break-small          : 450px;
@@ -15,7 +17,10 @@ $dark-blue            : #09031a;
 $dark-green           : #084041;
 $light-green          : #aeccc7;
 $purple               : #4d103b;
-$yellow               : #FFCC33;
+$yellow               : #c4a52e;
 
 // FONTS
-$sans-serif           : 'Cardo', sans-serif;
+$serif                : 'Cardo', serif;
+$sans-serif           : 'Open Sans', sans-serif;
+$headline             : 'Abril Fatface';
+
