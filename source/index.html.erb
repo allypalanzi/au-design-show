@@ -1,4 +1,16 @@
 <header id="m-hero" class="m-hero">
+<ul class="stars">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
   <div class="l-wrap">
     <div class="m-hero__header">
       <img src="<%= image_path("illuminate.png") %>">
@@ -7,18 +19,20 @@
   </div>
 </header>
 
-<nav class="m-nav">
-  <div class="grid">
-    <div class="m-two"><a href="#m-hero">AU Design Show</a></div>
-    <div class="m-two">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#judges">Judges</a></li>
-      </ul>
-    </div>
+<!-- <nav class="m-nav grid">
+  <div class="m-two"><a href="#m-hero">AU Design Show</a></div>
+  <div class="m-two">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#judges">Judges</a></li>
+    </ul>
   </div>
-</nav>
+</nav> -->
+
+<div class="break">
+    <img src="<%= image_path("line.png") %>">
+</div>
 
 <section id="about" class="m-about">
     <h2>About the Show</h2>
@@ -45,6 +59,10 @@
       <a class="button" href="#">RSVP to the Reception</a>
 
 </section>
+
+<div class="break">
+    <img src="<%= image_path("line.png") %>">
+</div>
 
 <section id="work" class="m-work">
   <h2>The Work</h2>
@@ -98,6 +116,10 @@
   </div>
 </section>
 
+<div class="break">
+    <img src="<%= image_path("line.png") %>">
+</div>
+
 <section id="judges" class="m-judges">
   <h2>The Judges</h2>
   <div class="l-wrap grid">
@@ -122,8 +144,8 @@
 <footer>
   <div class="l-wrap grid">
     <div class="m-three">
-      AUD LOGO
-      <p>The Design Program at American teaches the theory and practice of graphic communications design. Our courses cover design for mobile, interactive and web media, publications, visual branding, packaging and typography.</p><p><a href="http://www.american.edu/cas/graphic-design/">Find out more »</a></p>
+    <img src="<%= image_path("aud-logo.png") %>">
+      <p>The Design Program at American teaches the theory and practice of graphic communications design. Our courses cover design for mobile, interactive and web media, publications, visual branding, packaging and typography.</p><p><a class="button" href="http://www.american.edu/cas/graphic-design/">Find out more »</a></p>
     </div>
     <div class="m-two"></div>
   </div>
