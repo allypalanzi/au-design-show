@@ -130,16 +130,16 @@ em {
   margin-bottom: 200px;
 }
 
-$starSize : .8,.2,.1,.5,.8,.2,.1,.8,.1;
-$starX    : 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%;
-$starY    : 200px, 100px, 500px, 200px, 400px, 300px, 200px, 250px, 450px;
-$delay    : 1s, 3s, 1.5s, .5s, 1s, 0s, 3s, 2s, 1s, 4s;
+$starSize : .8,.2,.3,.5,.8,.2,.3,.8,.3,.2,.8,.2,.4,.3,.4;
+$starX    : 10%, 15%, 20%, 25%, 30%, 35%, 40%, 85%, 60%, 65%, 70%, 75%, 80%, 90%,95%;
+$starY    : 200px, 100px, 500px, 200px, 600px, 300px, 200px, 650px, 450px, 200px, 800px, 700px, 100px, 250px, 40px;
+$delay    : 1s, 3s, 1.5s, .5s, 1s, 0s, 3s, 2s, 1s, 4s, 3s, 2s, 1s, 5s, 2s;
 
 
 @for $i from 1 through length($starSize) {
     .stars li {
       &:nth-child(#{$i}) {
-        @include animation(flicker 3s nth($delay, $i) linear infinite);
+        @include animation(flicker 2s nth($delay, $i) linear infinite);
         left: nth($starX, $i);
         top: nth($starY, $i);
         -webkit-transform: scale(nth($starSize, $i), nth($starSize, $i));
@@ -214,10 +214,15 @@ $delay    : 1s, 3s, 1.5s, .5s, 1s, 0s, 3s, 2s, 1s, 4s;
 
 
 .m-work {
-  .m-three {
-    height: 300px;
-    border: 1px solid red;
+  img {
+    max-width: 200px;
   }
+
+  h3 {
+    font-size: 40px;
+    padding: 100px 0px;
+  }
+
 }
 
 .m-judges {
@@ -266,6 +271,10 @@ section {
   padding: 30px;
 }
 
+.m-five {
+  @extend %grid-u-1-5;
+  padding: 30px;
+}
 
 footer {
   padding: 100px 0px 250px 0px;
