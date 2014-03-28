@@ -83,10 +83,9 @@ em {
 
 .m-nav {
   z-index: 1;
-  background: rgba(0,0,0,.9);
   width: 100%;
-  position: relative;
-  opacity: 0;
+  position: fixed;
+  top: 0;
   @include prefix(transition, opacity .4s);
   ul {
     text-align: right;
@@ -107,6 +106,10 @@ em {
   }
   &.opacity {
     opacity: .9;
+  }
+
+  .m-two{
+    text-align: left;
   }
 }
 .m-hero {
@@ -316,6 +319,7 @@ footer {
   padding: 100px 0px;
   img {
     max-width: 800px;
+    width: 100%;
     margin-bottom: 50px;
     padding: 20px;
     border: 1px solid white;

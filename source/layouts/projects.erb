@@ -14,6 +14,16 @@
   </head>
   
   <body class="<%= page_classes %> work">
+   <nav class="m-nav grid">
+  <div class="m-two"><a href="#m-hero">AU Design Show</a></div>
+  <div class="m-two">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#judges">Judges</a></li>
+    </ul>
+  </div>
+</nav> 
     <div class="l-wrap">
       <h2><%= current_page.data.title %></h2>
       <h3><%= current_page.data.student %></h3>
@@ -21,7 +31,11 @@
       <h4><%= current_page.data.professor %></h4>
       <h4><%= current_page.data.semester %></h4>
       <h4><%= current_page.data.category %></h4>
-      <h4><a href="<%= current_page.data.portfolio %>">Portfolio</a></h4>
+
+      <% if(current_page.data.portfolio)%>
+        <h4><a href="<%= current_page.data.portfolio %>">Portfolio</a></h4>
+      <% end %>
+
 <div class="images">
   <% if(current_page.data.images)%>
     <% current_page.data.images.each do |i|%>
@@ -32,6 +46,10 @@
     </div>
       <%= current_page.data.embed %>
       <%= current_page.data.description %>
+    <% if(current_page.data.link)%>
+      <h4><a href="<%= current_page.data.link %>">View Live</a></h4>
+    <% end %>
+
 
 
 </div>
