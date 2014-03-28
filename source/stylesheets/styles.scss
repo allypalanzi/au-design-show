@@ -63,6 +63,8 @@ em {
   width: 90%;
   max-width: 1500px;
   margin: 0 auto;
+  position: relative;
+  z-index: 5;
 }
 
 .grid {
@@ -312,14 +314,15 @@ footer {
   width: 70%;
 }
 
-
+//this is gross i'm in a hurry wah wah wah
 .work {
   margin: 0 auto;
   text-align: center;
   padding: 100px 0px;
+  max-width: 1000px;
+
   img {
-    max-width: 800px;
-    width: 100%;
+    max-width: 100%;
     margin-bottom: 50px;
     padding: 20px;
     border: 1px solid white;
@@ -334,7 +337,24 @@ footer {
       }
 
       p {
-        max-width: 800px;
+        max-width: 600px;
         margin: 0 auto;
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 28px;
       }
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
