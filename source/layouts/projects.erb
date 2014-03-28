@@ -13,17 +13,28 @@
     <%= javascript_include_tag  "all" %>
   </head>
   
-  <body class="<%= page_classes %>">
-  <%= current_page.data.student %>
-  <%= current_page.data.course %>
-  <%= current_page.data.description %>
-  <%= current_page.data.professor %>
-  <%= current_page.data.semester %>
-  <%= current_page.data.category %>
-
-  <% current_page.data.images.each do |i| %>
-    <img src="<%= i %>">
+  <body class="<%= page_classes %> work">
+    <div class="l-wrap">
+      <h2><%= current_page.data.title %></h2>
+      <h3><%= current_page.data.student %></h3>
+      <h4><%= current_page.data.course %></h4>
+      <h4><%= current_page.data.professor %></h4>
+      <h4><%= current_page.data.semester %></h4>
+      <h4><%= current_page.data.category %></h4>
+      <h4><a href="<%= current_page.data.portfolio %>">Portfolio</a></h4>
+<div class="images">
+  <% if(current_page.data.images)%>
+    <% current_page.data.images.each do |i|%>
+      <img src="<%= i %>">
+    <% end %>
   <% end %>
+
+    </div>
+      <%= current_page.data.embed %>
+      <%= current_page.data.description %>
+
+
+</div>
   
   </body>
 </html>

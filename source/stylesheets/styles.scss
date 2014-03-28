@@ -132,7 +132,7 @@ em {
 
 $starSize : .8,.2,.3,.5,.8,.2,.3,.8,.3,.2,.8,.2,.4,.3,.4;
 $starX    : 10%, 15%, 20%, 25%, 30%, 35%, 40%, 85%, 60%, 65%, 70%, 75%, 80%, 90%,95%;
-$starY    : 200px, 100px, 500px, 200px, 600px, 300px, 200px, 650px, 450px, 200px, 800px, 700px, 100px, 250px, 40px;
+$starY    : 200px, 100px, 500px, 100px, 600px, 300px, 290px, 650px, 450px, 340px, 800px, 700px, 100px, 250px, 40px;
 $delay    : 1s, 3s, 1.5s, .5s, 1s, 0s, 3s, 2s, 1s, 4s, 3s, 2s, 1s, 5s, 2s;
 
 
@@ -273,7 +273,7 @@ section {
 
 .m-five {
   @extend %grid-u-1-5;
-  padding: 30px;
+  padding: 30px 0px;
 }
 
 footer {
@@ -307,4 +307,30 @@ footer {
   border-top: 1px solid white;
   margin: 0 auto;
   width: 70%;
+}
+
+
+.work {
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px 0px;
+  img {
+    max-width: 800px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 1px solid white;
+  }
+
+  h4 {
+    text-align: left;
+    display: inline-block;
+    font-size: 20px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+      }
+
+      p {
+        max-width: 800px;
+        margin: 0 auto;
+      }
 }
