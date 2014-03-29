@@ -5,13 +5,16 @@
 .grid { letter-spacing: -0.31em; text-rendering: optimizespeed; display: -webkit-flex; -webkit-flex-flow: row wrap; display: -ms-flexbox; -ms-flex-flow: row wrap; word-spacing: -0.43em; }
 
 /* line 13, /Users/allypalanzi/design/au-design-show/source/stylesheets/_grid.scss */
-.m-two, .m-three { display: inline-block; letter-spacing: normal; word-spacing: normal; vertical-align: top; text-rendering: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.m-two, .m-three, .m-five { display: inline-block; letter-spacing: normal; word-spacing: normal; vertical-align: top; text-rendering: auto; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 /* line 31, /Users/allypalanzi/design/au-design-show/source/stylesheets/_grid.scss */
 .m-two { width: 50%; }
 
 /* line 32, /Users/allypalanzi/design/au-design-show/source/stylesheets/_grid.scss */
 .m-three { width: 33.33333%; }
+
+/* line 36, /Users/allypalanzi/design/au-design-show/source/stylesheets/_grid.scss */
+.m-five { width: 20%; }
 
 @media (max-width: 1100px) { /* line 46, /Users/allypalanzi/design/au-design-show/source/stylesheets/_grid.scss */
   .grid > * { width: 100% !important; } }
@@ -70,141 +73,181 @@ a:hover { color: #fff; -moz-transition: color 0.5s; -webkit-transition: color 0.
 em { font-style: italic; }
 
 /* line 62, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.l-wrap { width: 90%; max-width: 1500px; margin: 0 auto; }
+.l-wrap { width: 90%; max-width: 1500px; margin: 0 auto; position: relative; z-index: 5; }
 
-/* line 73, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 75, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .circle { border-radius: 200px; overflow: hidden; border: 1px solid white; padding: 10px; -moz-transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -ms-transition: opacity 0.5s; transition: opacity 0.5s; }
-/* line 79, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 81, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .circle:hover { opacity: .5; }
 
-/* line 84, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-nav { z-index: 1; background: rgba(0, 0, 0, 0.9); width: 100%; position: relative; opacity: 0; -moz-transition: opacity 0.4s; -webkit-transition: opacity 0.4s; -ms-transition: opacity 0.4s; transition: opacity 0.4s; }
-/* line 91, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 86, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-nav { z-index: 1; width: 100%; position: fixed; top: 0; -moz-transition: opacity 0.4s; -webkit-transition: opacity 0.4s; -ms-transition: opacity 0.4s; transition: opacity 0.4s; }
+/* line 92, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav ul { text-align: right; }
-/* line 94, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 95, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav li { display: inline-block; font-size: 16px; text-transform: lowercase; }
-/* line 100, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 101, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav a { padding: 20px; }
-/* line 104, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 105, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav.fixed { top: 0; position: fixed; }
-/* line 108, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 109, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-nav.opacity { opacity: .9; }
+/* line 113, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-nav .m-two { text-align: left; }
 
-/* line 112, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-hero { color: #fff; width: 100%; position: relative; padding-bottom: 50px; }
 /* line 117, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-hero { color: #fff; width: 100%; position: relative; padding-bottom: 50px; }
+/* line 122, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero img { max-width: 90%; }
-@media (max-width: 700px) { /* line 112, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+@media (max-width: 700px) { /* line 117, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   .m-hero { max-height: 500px; } }
 
-/* line 126, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 131, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-hero__header { margin: 0 auto; text-align: center; padding-top: 10%; margin-bottom: 200px; }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(1) { -webkit-animation: flicker 3s 1s linear infinite; -moz-animation: flicker 3s 1s linear infinite; -o-animation: flicker 3s 1s linear infinite; animation: flicker 3s 1s linear infinite; left: 10%; top: 200px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(1) { -webkit-animation: flicker 2s 1s linear infinite; -moz-animation: flicker 2s 1s linear infinite; -o-animation: flicker 2s 1s linear infinite; animation: flicker 2s 1s linear infinite; left: 10%; top: 200px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(2) { -webkit-animation: flicker 3s 3s linear infinite; -moz-animation: flicker 3s 3s linear infinite; -o-animation: flicker 3s 3s linear infinite; animation: flicker 3s 3s linear infinite; left: 20%; top: 100px; -webkit-transform: scale(0.2, 0.2); -moz-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(2) { -webkit-animation: flicker 2s 3s linear infinite; -moz-animation: flicker 2s 3s linear infinite; -o-animation: flicker 2s 3s linear infinite; animation: flicker 2s 3s linear infinite; left: 15%; top: 100px; -webkit-transform: scale(0.2, 0.2); -moz-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(3) { -webkit-animation: flicker 3s 1.5s linear infinite; -moz-animation: flicker 3s 1.5s linear infinite; -o-animation: flicker 3s 1.5s linear infinite; animation: flicker 3s 1.5s linear infinite; left: 30%; top: 500px; -webkit-transform: scale(0.1, 0.1); -moz-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(3) { -webkit-animation: flicker 2s 1.5s linear infinite; -moz-animation: flicker 2s 1.5s linear infinite; -o-animation: flicker 2s 1.5s linear infinite; animation: flicker 2s 1.5s linear infinite; left: 20%; top: 500px; -webkit-transform: scale(0.3, 0.3); -moz-transform: scale(0.3, 0.3); transform: scale(0.3, 0.3); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(4) { -webkit-animation: flicker 3s 0.5s linear infinite; -moz-animation: flicker 3s 0.5s linear infinite; -o-animation: flicker 3s 0.5s linear infinite; animation: flicker 3s 0.5s linear infinite; left: 40%; top: 200px; -webkit-transform: scale(0.5, 0.5); -moz-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(4) { -webkit-animation: flicker 2s 0.5s linear infinite; -moz-animation: flicker 2s 0.5s linear infinite; -o-animation: flicker 2s 0.5s linear infinite; animation: flicker 2s 0.5s linear infinite; left: 25%; top: 100px; -webkit-transform: scale(0.5, 0.5); -moz-transform: scale(0.5, 0.5); transform: scale(0.5, 0.5); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(5) { -webkit-animation: flicker 3s 1s linear infinite; -moz-animation: flicker 3s 1s linear infinite; -o-animation: flicker 3s 1s linear infinite; animation: flicker 3s 1s linear infinite; left: 50%; top: 400px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(5) { -webkit-animation: flicker 2s 1s linear infinite; -moz-animation: flicker 2s 1s linear infinite; -o-animation: flicker 2s 1s linear infinite; animation: flicker 2s 1s linear infinite; left: 30%; top: 600px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(6) { -webkit-animation: flicker 3s 0s linear infinite; -moz-animation: flicker 3s 0s linear infinite; -o-animation: flicker 3s 0s linear infinite; animation: flicker 3s 0s linear infinite; left: 60%; top: 300px; -webkit-transform: scale(0.2, 0.2); -moz-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(6) { -webkit-animation: flicker 2s 0s linear infinite; -moz-animation: flicker 2s 0s linear infinite; -o-animation: flicker 2s 0s linear infinite; animation: flicker 2s 0s linear infinite; left: 35%; top: 300px; -webkit-transform: scale(0.2, 0.2); -moz-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(7) { -webkit-animation: flicker 3s 3s linear infinite; -moz-animation: flicker 3s 3s linear infinite; -o-animation: flicker 3s 3s linear infinite; animation: flicker 3s 3s linear infinite; left: 70%; top: 200px; -webkit-transform: scale(0.1, 0.1); -moz-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(7) { -webkit-animation: flicker 2s 3s linear infinite; -moz-animation: flicker 2s 3s linear infinite; -o-animation: flicker 2s 3s linear infinite; animation: flicker 2s 3s linear infinite; left: 40%; top: 290px; -webkit-transform: scale(0.3, 0.3); -moz-transform: scale(0.3, 0.3); transform: scale(0.3, 0.3); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(8) { -webkit-animation: flicker 3s 2s linear infinite; -moz-animation: flicker 3s 2s linear infinite; -o-animation: flicker 3s 2s linear infinite; animation: flicker 3s 2s linear infinite; left: 80%; top: 250px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(8) { -webkit-animation: flicker 2s 2s linear infinite; -moz-animation: flicker 2s 2s linear infinite; -o-animation: flicker 2s 2s linear infinite; animation: flicker 2s 2s linear infinite; left: 85%; top: 650px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
 
-/* line 141, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.stars li:nth-child(9) { -webkit-animation: flicker 3s 1s linear infinite; -moz-animation: flicker 3s 1s linear infinite; -o-animation: flicker 3s 1s linear infinite; animation: flicker 3s 1s linear infinite; left: 90%; top: 450px; -webkit-transform: scale(0.1, 0.1); -moz-transform: scale(0.1, 0.1); transform: scale(0.1, 0.1); }
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(9) { -webkit-animation: flicker 2s 1s linear infinite; -moz-animation: flicker 2s 1s linear infinite; -o-animation: flicker 2s 1s linear infinite; animation: flicker 2s 1s linear infinite; left: 60%; top: 450px; -webkit-transform: scale(0.3, 0.3); -moz-transform: scale(0.3, 0.3); transform: scale(0.3, 0.3); }
 
-@-webkit-keyframes flicker { /* line 155, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(10) { -webkit-animation: flicker 2s 4s linear infinite; -moz-animation: flicker 2s 4s linear infinite; -o-animation: flicker 2s 4s linear infinite; animation: flicker 2s 4s linear infinite; left: 65%; top: 340px; -webkit-transform: scale(0.2, 0.2); -moz-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
+
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(11) { -webkit-animation: flicker 2s 3s linear infinite; -moz-animation: flicker 2s 3s linear infinite; -o-animation: flicker 2s 3s linear infinite; animation: flicker 2s 3s linear infinite; left: 70%; top: 800px; -webkit-transform: scale(0.8, 0.8); -moz-transform: scale(0.8, 0.8); transform: scale(0.8, 0.8); }
+
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(12) { -webkit-animation: flicker 2s 2s linear infinite; -moz-animation: flicker 2s 2s linear infinite; -o-animation: flicker 2s 2s linear infinite; animation: flicker 2s 2s linear infinite; left: 75%; top: 700px; -webkit-transform: scale(0.2, 0.2); -moz-transform: scale(0.2, 0.2); transform: scale(0.2, 0.2); }
+
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(13) { -webkit-animation: flicker 2s 1s linear infinite; -moz-animation: flicker 2s 1s linear infinite; -o-animation: flicker 2s 1s linear infinite; animation: flicker 2s 1s linear infinite; left: 80%; top: 100px; -webkit-transform: scale(0.4, 0.4); -moz-transform: scale(0.4, 0.4); transform: scale(0.4, 0.4); }
+
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(14) { -webkit-animation: flicker 2s 5s linear infinite; -moz-animation: flicker 2s 5s linear infinite; -o-animation: flicker 2s 5s linear infinite; animation: flicker 2s 5s linear infinite; left: 90%; top: 250px; -webkit-transform: scale(0.3, 0.3); -moz-transform: scale(0.3, 0.3); transform: scale(0.3, 0.3); }
+
+/* line 146, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.stars li:nth-child(15) { -webkit-animation: flicker 2s 2s linear infinite; -moz-animation: flicker 2s 2s linear infinite; -o-animation: flicker 2s 2s linear infinite; animation: flicker 2s 2s linear infinite; left: 95%; top: 40px; -webkit-transform: scale(0.4, 0.4); -moz-transform: scale(0.4, 0.4); transform: scale(0.4, 0.4); }
+
+@-webkit-keyframes flicker { /* line 160, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   0% { opacity: .7; }
-  /* line 159, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 164, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   50% { opacity: .3; }
-  /* line 163, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 168, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   100% { opacity: .7; } }
 
-@-moz-keyframes flicker { /* line 155, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+@-moz-keyframes flicker { /* line 160, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   0% { opacity: .7; }
-  /* line 159, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 164, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   50% { opacity: .3; }
-  /* line 163, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 168, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   100% { opacity: .7; } }
 
-@-o-keyframes flicker { /* line 155, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+@-o-keyframes flicker { /* line 160, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   0% { opacity: .7; }
-  /* line 159, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 164, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   50% { opacity: .3; }
-  /* line 163, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 168, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   100% { opacity: .7; } }
 
-@keyframes flicker { /* line 155, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+@keyframes flicker { /* line 160, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   0% { opacity: .7; }
-  /* line 159, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 164, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   50% { opacity: .3; }
-  /* line 163, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+  /* line 168, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
   100% { opacity: .7; } }
 
-/* line 168, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 173, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .stars { position: fixed; width: 100%; z-index: 1; }
-/* line 172, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 177, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .stars li { -moz-transition: opacity 0.3s; -webkit-transition: opacity 0.3s; -ms-transition: opacity 0.3s; transition: opacity 0.3s; background: white; border-radius: 2px; box-shadow: 0px 0px 30px 30px #fcfcfc; display: inline-block; height: 2px; list-style: none; position: absolute; opacity: .7; width: 2px; }
 
-/* line 186, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 191, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-about__name { font-size: 30px; padding-bottom: 15px; border-bottom: 1px solid #fff; text-transform: uppercase; display: inline-block; }
 
-/* line 195, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 200, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-about__info { font-size: 18px; margin-top: 40px; line-height: 28px; }
-/* line 199, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 204, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-about__info.location { font-size: 22px; line-height: 40px; }
 
-/* line 205, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 210, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .exhibit { margin-top: 40px; }
 
-/* line 209, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 214, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-about__date { font-size: 30px; line-height: 35px; margin: 5px 0; }
 
-/* line 217, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-work .m-three { height: 300px; border: 1px solid red; }
-
-/* line 224, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-judges img { max-width: 200px; }
-
-/* line 229, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
-.m-judges__name { font-size: 30px; margin: 30px 0; }
+/* line 222, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-work img { max-width: 200px; }
+/* line 226, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-work h3 { font-size: 40px; padding: 100px 0px; }
 
 /* line 234, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-judges img { max-width: 200px; }
+
+/* line 239, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-judges__name { font-size: 30px; margin: 30px 0; }
+
+/* line 244, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-judges__info { margin: 15px 0; }
 
-/* line 238, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 248, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 section { padding: 200px 0; text-align: center; position: relative; z-index: 2; }
 
-/* line 245, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 255, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .button { padding: 20px; border: 1px solid #fff; color: #fff; display: inline-block; text-decoration: none; font-size: 16px; -moz-transition: 0.7s; -webkit-transition: 0.7s; -ms-transition: 0.7s; transition: 0.7s; }
-/* line 253, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 263, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .button:hover { border-color: #084041; -moz-transition: 0.7s; -webkit-transition: 0.7s; -ms-transition: 0.7s; transition: 0.7s; background-color: #084041; }
 
-/* line 264, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 274, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .m-three { padding: 30px; }
 
-/* line 270, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 279, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.m-five { padding: 30px 0px; }
+
+/* line 284, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 footer { padding: 100px 0px 250px 0px; background: url(../images/telescope.png) bottom left no-repeat rgba(0, 0, 0, 0.8); position: relative; border-top: 1px solid white; z-index: 2; }
-/* line 277, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 291, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 footer p { font-size: 16px; margin-bottom: 15px; }
-/* line 282, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 296, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 footer .copy { text-align: right; bottom: 15px; position: absolute; right: 30px; }
-/* line 289, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 303, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 footer img { width: 300px; margin-bottom: 25px; }
 
-/* line 295, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+/* line 309, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
 .rule { max-width: 800px; display: block; border-top: 1px solid white; margin: 0 auto; width: 70%; }
+
+/* line 318, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.work { margin: 0 auto; text-align: center; padding: 100px 0px; max-width: 1000px; }
+/* line 324, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.work img { max-width: 100%; margin-bottom: 50px; padding: 20px; border: 1px solid white; }
+/* line 331, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.work h4 { text-align: left; display: inline-block; font-size: 20px; padding-bottom: 50px; padding-right: 10px; }
+/* line 339, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.work p { max-width: 600px; margin: 0 auto; margin-bottom: 20px; font-size: 20px; line-height: 28px; }
+
+/* line 348, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.videoWrapper { position: relative; padding-bottom: 56.25%; /* 16:9 */ padding-top: 25px; height: 0; }
+
+/* line 354, /Users/allypalanzi/design/au-design-show/source/stylesheets/styles.scss */
+.videoWrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
